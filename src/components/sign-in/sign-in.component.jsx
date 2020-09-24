@@ -26,6 +26,7 @@ class SignIn extends React.Component{
 
         }catch (error){
             console.log(error);
+            alert("Email and password do not match our records")
         }
     }
 
@@ -58,7 +59,7 @@ class SignIn extends React.Component{
                         required />
                     <div className="buttons">
                     <CustomButton type="submit">SIGN IN</CustomButton>
-                    <CustomButton onClick={ signInWithGoogle } isGoogleSignIn >GOOGLE SIGN IN</CustomButton>
+                    <CustomButton onClick={ signInWithGoogle } isGoogleSignIn type="button" >GOOGLE SIGN IN</CustomButton>
                     </div>
                 </form>
             </div>
