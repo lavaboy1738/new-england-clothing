@@ -7,11 +7,11 @@ import {createStructuredSelector} from "reselect";
 import CollectionPreview from "../collection-preview/collection-preview.component.jsx";
 
 const CollectionsOverview =({collections}) => {
-    return <div className="collections-overview">
+    return (<div className="collections-overview">
             {collections.map(({id, ...otherCollectionProps})=>(
                 <CollectionPreview key={id} {...otherCollectionProps}/>
             ))}
-    </div>
+    </div>)
 }
 
 const mapStateToProps = createStructuredSelector({
