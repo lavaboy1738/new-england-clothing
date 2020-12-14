@@ -21,7 +21,7 @@ const StripkeCheckoutButton = ({price}) => {
             image="https://img.pokemondb.net/artwork/large/charizard.jpg"
             description={`Your Total is $${price}`}
             amout={priceForStripe}
-            panelLabel = "Pay Now"
+            panelLabel = {`Pay Now $${price}`}
             token={onToken}
             stripeKey={publishableKey}
         />
