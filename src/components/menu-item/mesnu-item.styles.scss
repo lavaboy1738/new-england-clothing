@@ -5,6 +5,10 @@
     overflow: hidden;
     margin-bottom: 3rem;
     background: linear-gradient(to top, #333, transparent 70%);
+    @media(max-width: 420px){
+      width: 100%;
+      margin-bottom: 2rem;
+    }
 
     &:hover {
       & .background-image {
@@ -16,6 +20,10 @@
     &.large{
       height: 24rem;
       width: 48%;
+      @media(max-width: 420px){
+        width: 100%;
+        margin-bottom: 2rem;
+      }
     }
 
     .background-image{
@@ -40,6 +48,9 @@
         font-weight: 200;
         font-size: 2rem;
         color: white;
+          @media (max-width: 1000px) {
+            font-size: 1rem;
+        }
       }
       button{
         margin: 1rem auto;

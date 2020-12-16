@@ -5,7 +5,10 @@
 }
 
 body{
-    padding: 20px 60px;
+    padding: 1.5rem 5vw;
+    @media (max-width: 1000px) {
+        font-size: 12px;
+    }
 }
 
 a{

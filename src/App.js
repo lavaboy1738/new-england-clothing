@@ -4,7 +4,7 @@ import ShopPage from "./pages/shop/shop.component.jsx";
 import Header from "./components/header/header.component.jsx";
 import CheckoutPage from "./pages/checkout/checkout.component.jsx";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component.jsx";
-import "./App.css";
+import "./App.scss";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user.actions.js";
@@ -43,7 +43,7 @@ class App extends React.Component {
     return (
       <div>
         <ScrollToTop />
-        <Header />
+        <Header onChange={this.toggleMobile} />
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route path="/shop" component={ShopPage} />

@@ -4,7 +4,6 @@ import Vermont from "../../../assets/images/items/Fleeces/Vermont.png";
 import MountainMoose from "../../../assets/images/items/Fleeces/MountainMoose.png";
 import MaineMoose from "../../../assets/images/items/Fleeces/MaineMoose.png";
 import Adirondack from "../../../assets/images/items/Fleeces/Adirondack.png";
-import { version } from "react";
 
 export const Fleeces = {
   id: 8,

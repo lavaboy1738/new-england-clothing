@@ -3,11 +3,19 @@
     width: 100%;
     margin-bottom: 3rem;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @media(max-width: 420px){
+        margin-bottom: 1rem;
+    }
     &-item{
         width: 31%;
         background-color: rgba(0,0,0,0.5);
         position: relative;
         transition: 0.3s all ease;
+        @media(max-width: 420px){
+            width: 100%;
+            margin-bottom: 2rem;
+        }
         &:hover{
             background-color: rgba(0,0,0,0.2);
             transition: 0.3s all ease;

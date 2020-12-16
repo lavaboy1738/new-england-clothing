@@ -6,6 +6,9 @@
     cursor: pointer;
     overflow: hidden;
     transition: 0.3s all ease-out;
+    @media(max-width: 420px){
+        margin-bottom: 2rem;
+    }
     &:hover{
         img{
             transition: 0.3s all ease-out;
@@ -35,10 +38,14 @@
             font-family: Jakarta-display;
             font-weight: 700;
             font-size: 4rem;
+            @media (max-width: 1000px) {
+                font-size: 2rem;
+            }
         }   
         &-sub{
             font-family: Jakarta;
             font-weight: 400;
+            font-size: 1rem;
         }
     }
 }

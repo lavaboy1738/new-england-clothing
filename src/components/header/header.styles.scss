@@ -21,10 +21,40 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
+      @media (max-width: 1000px) {
+        justify-content: space-between;
+        width: 30%;
+      }
+      @media (max-width: 420px) {
+        justify-content: space-between;
+        width: 50%;
+      }
   
       .option {
-        padding: 0.5rem 1rem;
+        padding: 0.25rem 0;
         cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        @media (max-width: 1000px) {
+          display: none;
+          &:first-child, &:nth-child(7){
+            display: block;
+          }
+        }
+        &::before{
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: -120%;
+          width: 100%;
+          height: 2px;
+          background-color: black;
+          transition: 0.3s all ease-out;
+        }
+        &:hover::before{
+          left: 0%;
+          transition: 0.3s all ease-out;
+        }
       }
     }
   }

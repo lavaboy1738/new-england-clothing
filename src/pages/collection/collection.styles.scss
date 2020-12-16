@@ -10,7 +10,15 @@
     .items {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-gap: 3rem;
+      grid-gap: 2rem;
+      margin-left: -1rem;
+      margin-right: 1rem;
+      @media(min-width: 568px){
+        grid-template-columns: 1fr 1fr;
+      }
+      @media(max-width: 420px){
+        grid-template-columns: 1fr;
+      }
   
       & .collection-item {
         margin-bottom: 2rem;
