@@ -14,21 +14,21 @@ const NewArrivals = ()=>{
                 <img src={NewArrival1} alt=""/>
                 <div className="new-arrival-item-content">
                     <h1>FLANNELS</h1>
-                    <CustomButton onClick={()=>{history.push("/shop/hats")}}>Shop Now</CustomButton>
+                    <CustomButton onClick={()=>{history.push("/shop/flannels")}}>Shop Now</CustomButton>
                 </div>
             </div>
             <div className="new-arrival-item">
                 <img src={NewArrival2} alt=""/>
                 <div className="new-arrival-item-content">
                     <h1>SWEATERS</h1>
-                    <CustomButton onClick={()=>{history.push("/shop/hats")}}>Shop Now</CustomButton>
+                    <CustomButton onClick={()=>{history.push("/shop/sweaters")}}>Shop Now</CustomButton>
                 </div>
             </div>
             <div className="new-arrival-item">
                 <img src={NewArrival3} alt=""/>
                 <div className="new-arrival-item-content">
                     <h1>FLEECES</h1>
-                    <CustomButton onClick={()=>{history.push("/shop/hats")}}>Shop Now</CustomButton>
+                    <CustomButton onClick={()=>{history.push("/shop/fleeces")}}>Shop Now</CustomButton>
                 </div>
             </div>
         </div>

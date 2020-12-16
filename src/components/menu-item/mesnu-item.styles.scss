@@ -7,7 +7,6 @@
     background: linear-gradient(to top, #333, transparent 70%);
 
     &:hover {
-      cursor: pointer;
       & .background-image {
         transform: scale(1.1);
         transition: 0.3s all ease;

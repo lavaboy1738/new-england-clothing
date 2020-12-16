@@ -36,7 +36,7 @@ const INITIAL_STATE = {
       title: "accessories",
       url: Accessories,
       id: 5,
-      linkURL: "shop/sneakers",
+      linkURL: "shop/accessories",
     },
   ],
 };
