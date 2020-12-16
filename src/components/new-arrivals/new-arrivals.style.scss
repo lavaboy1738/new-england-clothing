@@ -1,0 +1,39 @@
+.new-arrival{
+    display: flex;
+    width: 100%;
+    margin-bottom: 3rem;
+    justify-content: space-between;
+    &-item{
+        width: 31%;
+        background-color: rgba(0,0,0,0.5);
+        position: relative;
+        transition: 0.3s all ease;
+        &:hover{
+            background-color: rgba(0,0,0,0.2);
+            transition: 0.3s all ease;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            mix-blend-mode: darken;
+        }
+        &-content{
+            position: absolute;
+            bottom: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            h1{
+                font-family: Jakarta;
+                font-weight: 200;
+                color: white;
+                margin-bottom: 2rem;
+            }
+            button{
+                margin: 0 auto;
+            }
+        }
+    }
+}

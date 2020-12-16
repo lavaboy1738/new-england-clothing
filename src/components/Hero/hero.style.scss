@@ -1,7 +1,29 @@
 .hero{
     width: 100%;
+    position: relative;
+    background: linear-gradient(to top, #333, transparent 50%);
+    margin-bottom: 3rem;
     img{
         display: block;
         width: 100%;
+        mix-blend-mode: darken;
+    }
+    &-titles{
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        color: white;
+        text-align: center;
+        &-main{
+            font-family: Jakarta-display;
+            font-weight: 700;
+            font-size: 4rem;
+        }   
+        &-sub{
+            font-family: Jakarta;
+            font-weight: 400;
+        }
     }
 }

@@ -6,11 +6,17 @@ import MenuItem from "../menu-item/menu-item.component.jsx";
 import "./directory.styles.scss";
 
 const Directory = ({sections}) => {
-        return (<div className="directory-menu">
+        return (
+            <>
+            <div className="directory-menu-title">
+            Holiday Favorites
+        </div>
+        <div className="directory-menu">
             {sections.map(({id, ...sectionProps}) => (
                     <MenuItem key = {id} {...sectionProps}/>
             ))}
-        </div>)
+        </div>
+        </>)
 }
 
 const mapStateToProps = createStructuredSelector({

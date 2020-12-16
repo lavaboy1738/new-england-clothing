@@ -11,6 +11,7 @@ import { setCurrentUser } from "./redux/user/user.actions.js";
 import { selectCurrentUser } from "./redux/user/user.selector.js";
 import { createStructuredSelector } from "reselect";
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils.js";
+import ScrollToTop from "./components/ScrollToTop";
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
@@ -41,6 +42,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <ScrollToTop />
         <Header />
         <Switch>
           <Route exact path="/" component={Homepage} />
