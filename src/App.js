@@ -12,6 +12,7 @@ import { selectCurrentUser } from "./redux/user/user.selector.js";
 import { createStructuredSelector } from "reselect";
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils.js";
 import ScrollToTop from "./components/ScrollToTop";
+import { Footer } from "./components/footer/footer.jsx";
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
@@ -60,6 +61,7 @@ class App extends React.Component {
             }}
           />
         </Switch>
+        <Footer />
       </div>
     );
   }
