@@ -21,10 +21,13 @@
   
       .header-block {
         text-transform: capitalize;
-        width: 23%;
+        width: 20%;
+        @media(max-width: 420px){
+          font-size: 10px;
+        }
   
         &:last-child {
-          width: 8%;
+          width: 10%;
         }
       }
     }

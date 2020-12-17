@@ -6,6 +6,9 @@
     padding: 1rem 0;
     font-size: 1.25rem;
     align-items: center;
+    @media(max-width: 420px){
+      font-size: 10px;
+    }
   
     .image-container {
       width: 23%;
