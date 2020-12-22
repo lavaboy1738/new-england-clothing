@@ -1,5 +1,5 @@
 import EndlessOcean from "../../../assets/images/items/Accessories/Endless-Ocean_1799x1799.jpg";
-import BluePearl from "../../../assets/images/items/Accessories/BluePearl.png";
+import BluePearl from "../../../assets/images/items/Accessories/BluePearl.webp";
 import Mystic from "../../../assets/images/items/Accessories/MysticNot.png";
 import UnionJack from "../../../assets/images/items/Accessories/UnionJack.png";
 import Atlantic from "../../../assets/images/items/Accessories/AtlanticWhalers.png";
